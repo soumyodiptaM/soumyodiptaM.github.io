@@ -34,8 +34,57 @@ font-weight: bold;
 }
 
 .hero {
-text-align: center;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+gap: 80px;
 margin-bottom: 80px;
+padding: 40px 0;
+}
+
+.hero-left {
+flex: 2;
+text-align: left;
+}
+
+.hero-right {
+flex: 1;
+}
+
+.hero-right h2 {
+margin-bottom: 25px;
+font-size: 1.5rem;
+}
+
+.skill-tags {
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
+}
+
+.skill-tags span {
+background: #f0f4f8;
+padding: 10px 16px;
+border-radius: 25px;
+font-weight: 600;
+font-size: 0.95rem;
+}
+
+.hero-left .hero-description {
+max-width: 100%;
+margin: 0;
+}
+
+.hero-left .hero-stats {
+justify-content: flex-start;
+}
+
+.hero-left .buttons {
+margin-top: 30px;
+}
+
+.hero-left .hero-education {
+margin-top: 20px;
 }
 
 .hero h1 {
@@ -181,4 +230,29 @@ margin-right: 20px;
     font-size:0.8rem;
     font-weight:600;
     margin-bottom:15px;
+}
+
+@media (max-width: 900px) {
+
+.hero {
+flex-direction: column;
+}
+
+.hero-left,
+.hero-right {
+width: 100%;
+}
+
+.hero-left {
+text-align: center;
+}
+
+.hero-left .hero-stats {
+justify-content: center;
+}
+
+.hero-left .hero-description {
+margin: auto;
+}
+
 }
