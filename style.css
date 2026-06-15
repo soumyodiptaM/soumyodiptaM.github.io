@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   }
+html {
+scroll-behavior: smooth;
+}
 
 body {
 font-family: Arial, sans-serif;
@@ -12,13 +15,27 @@ margin: auto;
 padding: 20px;
 color: #333;
 }
+.logo a{
+text-decoration:none;
+color:#1e293b;
+font-weight:600;
+}
 
 nav {
 display: flex;
 justify-content: space-between;
 align-items: center;
-margin-bottom: 20px;
 padding: 20px 0;
+
+position: sticky;
+top: 0;
+
+background: rgba(255,255,255,0.9);
+backdrop-filter: blur(8px);
+
+z-index: 1000;
+
+border-bottom: 1px solid #f1f5f9;
 }
 
 nav ul {
@@ -277,4 +294,111 @@ margin: auto;
     margin-bottom:20px;
 }
 
+}
+
+#contact{
+    text-align:center;
+    padding:60px 0;
+}
+
+.contact-text{
+    max-width:600px;
+    margin:20px auto 35px;
+    color:#666;
+}
+
+.contact-links{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.contact-links a{
+    text-decoration:none;
+    padding:12px 24px;
+    border:1px solid #dbe2ea;
+    border-radius:8px;
+    color:#0891b2;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+.contact-links a:hover{
+    transform:translateY(-2px);
+    border-color:#0891b2;
+}
+
+#experience{
+    margin-bottom:80px;
+}
+
+.experience-item{
+    border-left:3px solid #0891b2;
+    padding-left:25px;
+    margin-bottom:40px;
+    position:relative;
+}
+
+.experience-item::before{
+    content:'';
+    width:12px;
+    height:12px;
+    background:#0891b2;
+    border-radius:50%;
+    position:absolute;
+    left:-8px;
+    top:8px;
+}
+
+.experience-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:12px;
+}
+
+.company{
+    color:#0891b2;
+    font-weight:600;
+}
+
+.experience-date{
+    color:#777;
+    font-size:0.9rem;
+}
+
+.experience-tags{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:15px;
+}
+
+.experience-tags span{
+    background:#f0f4f8;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:0.85rem;
+    font-weight:600;
+}
+.location{
+    color:#888;
+    font-size:0.9rem;
+    margin-top:2px;
+}
+
+.research-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:20px;
+}
+
+.research-tags span{
+    background:#f0f4f8;
+    padding:10px 18px;
+    border-radius:25px;
+    font-weight:600;
+    color:#334155;
 }
