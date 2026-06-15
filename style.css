@@ -571,3 +571,11 @@ margin: auto;
     color:#3a8fb7;
     transform:translateY(-2px);
 }
+.footer{
+    margin-top:80px;
+    padding-top:30px;
+    border-top:1px solid #e5e7eb;
+    text-align:center;
+    color:#94a3b8;
+    font-size:0.9rem;
+}
